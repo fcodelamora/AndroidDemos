@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="edu.delamora.demo.gurunaviplaces.GuruPlaceInformationScrollingActivity"
+    tools:showIn="@layout/activity_guru_place_information_scrolling"
+    android:padding="3dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="0"
+        tools:showIn="@layout/activity_guru_place_information_scrolling">
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/card_view_details"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:translationZ="3dp"
+            android:transitionGroup="false"
+            android:minHeight="190dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="170dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:focusableInTouchMode="true"
+                android:paddingRight="0dp"
+                android:paddingLeft="0dp"
+                android:padding="10dp"
+                android:paddingTop="0dp"
+                android:translationZ="5dp">
+
+                <GridLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:columnCount="6"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="6"
+                    android:paddingTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/place_information_ic_website"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_column="0"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_row="3"
+                        android:src="@drawable/ic_website" />
+                    <TextView
+                        android:id="@+id/textview_place_website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="5"
+                        android:layout_gravity="center_vertical"
+                        android:layout_row="3"
+                        android:text="@string/visit_website"
+                        android:singleLine="true"
+                        android:paddingRight="35dp" />
+
+
+
+                    <ImageView
+                        android:id="@+id/place_information_ic_access"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        android:src="@drawable/ic_location_access"
+                        android:tint="#606060"
+                        android:tintMode="multiply"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="center" />
+                    <TextView
+                        android:id="@+id/textview_place_access"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="5"
+                        android:layout_gravity="center_vertical"
+                        android:layout_row="2"
+                        android:paddingRight="35dp"
+                        android:text="Access"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp" />
+
+                    <ImageView
+                        android:id="@+id/place_information_ic_budget"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_column="0"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_row="4"
+                        android:src="@drawable/ic_yen_coin"
+                        android:tint="#f96c00"
+                        android:tintMode="multiply" />
+
+                    <TextView
+                        android:id="@+id/textview_place_budget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="5"
+                        android:layout_gravity="center_vertical"
+                        android:layout_row="4"
+                        android:paddingRight="35dp"
+                        android:text="Budget" />
+
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/place_information_ic_phone"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:src="@drawable/ic_phone"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/textview_place_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="4"
+                        android:layout_gravity="center_vertical"
+                        android:layout_row="0"
+                        android:paddingRight="35dp"
+                        android:text="Phone"
+                        android:singleLine="true"
+                        />
+
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/place_information_ic_address"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:src="@drawable/ic_location"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:id="@+id/textview_place_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="4"
+                        android:layout_gravity="center_vertical"
+                        android:layout_row="1"
+                        android:paddingRight="35dp"
+                        android:text="Address"
+                        android:singleLine="false"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp" />
+                    <ImageView
+                        android:id="@+id/imageview_place_coupon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="4"
+                        android:layout_gravity="right"
+                        android:layout_row="5"
+                        android:paddingEnd="30dp"
+                        android:src="@drawable/ic_coupon" />
+
+                </GridLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/cardShadow"
+                    android:padding="1dp"
+                    android:layout_marginLeft="2dp">
+
+                    <fragment
+                        android:id="@+id/guruplace_map_fragment"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/card_view_gallery"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            card_view:cardCornerRadius="4dp"
+            android:translationZ="3dp"
+            android:padding="10dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:weightSum="2"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageview_place_image_1"
+                    style="@style/textSecondary"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_camera"
+                    android:minHeight="75dp"
+                    android:layout_margin="0dp"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="fill_parent" />
+
+                <ImageView
+                    android:id="@+id/imageview_place_image_2"
+                    style="@style/textSecondary"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_camera"
+                    android:minHeight="75dp"
+                    android:layout_margin="0dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/card_view_pr"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:translationZ="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:translationZ="5dp"
+                android:padding="10dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/place_information_ic_open_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_column="2"
+                    android:layout_row="2"
+                    android:cropToPadding="false"
+                    android:src="@drawable/ic_clock"
+                    android:tint="#00089c"
+                    android:tintMode="multiply"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/textview_place_open_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_gravity="center"
+                    android:layout_row="2"
+                    android:text="OpenHours"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            app:cardUseCompatPadding="true"
+            android:id="@+id/card_view_open_hours"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:translationZ="3dp">
+
+            <TextView
+                android:id="@+id/textview_place_pr"
+                style="@style/textSecondary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:linksClickable="false"
+                android:padding="10dp"
+                android:text="Place PR"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:translationZ="5dp" />
+        </android.support.v7.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

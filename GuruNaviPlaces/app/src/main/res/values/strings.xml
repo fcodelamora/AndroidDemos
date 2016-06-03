@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">GuruNavi Places</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_information"> - </string>
+    <string name="no_available_information">"No available information."</string>
+    <string name="check_gps_dialog_title">
+        Application needs fine location access in settings</string>
+    <string name="failed_to_acquire_location">
+        Failed to acquire location, using mock location</string>
+    <string name="zero_results">No places found nearby, try with a wider range</string>
+    <string name="title_activity_guru_place_information">Place</string>
+    <string name="range">Range:</string>
+    <string name="title_activity_guru_place_information_scrolling">
+        GuruPlaceInformationScrollingActivity
+    </string>
+    <string name="error_occurred">
+        "An error has occurred, Are you connected to the network?"</string>>
+
+    //Google API strings
+    <string name="network_error">Connection error: Verify network access and try again</string>
+
+
+
+
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+
+    </string>
+    <string name="visit_website">Visit website</string>
+    <string name="null_map_fragment">Error - Map Fragment was null!!</string>
+    <string name="searching">Searching…</string>
+    <string name="loading">Loading…</string>
+
+
+</resources>

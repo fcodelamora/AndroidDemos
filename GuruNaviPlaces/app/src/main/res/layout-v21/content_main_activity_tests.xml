@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="edu.delamora.demo.gurunaviplaces.MainActivityTests"
+    tools:showIn="@layout/app_bar_main_activity_tests"
+    android:paddingRight="2dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/main_activity_tests_search_params"
+        android:headerDividersEnabled="false"
+        android:background="@color/colorSecondary"
+        android:minHeight="45dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="4dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/range"
+            android:id="@+id/textView3"
+            android:textColor="@color/textWhite"
+            android:padding="2dp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:entries="@array/range_array"
+            android:id="@+id/spinner_range"
+            android:spinnerMode="dropdown"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+    </LinearLayout>
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:id="@+id/main_activity_tests_places_listview"
+        android:headerDividersEnabled="false" />
+
+</LinearLayout>

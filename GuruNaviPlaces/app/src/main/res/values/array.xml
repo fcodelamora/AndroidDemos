@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //String Arrays
+
+    <string-array name="range_array">
+        <item>300 m</item>
+        <item>500 m</item>
+        <item>1 Km</item>
+        <item>2 Km</item>
+        <item>3 Km</item>
+    </string-array>
+
+
+</resources>
