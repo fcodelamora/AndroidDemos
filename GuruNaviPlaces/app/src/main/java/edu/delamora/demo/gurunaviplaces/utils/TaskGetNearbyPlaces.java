@@ -72,9 +72,9 @@ public class TaskGetNearbyPlaces extends AsyncTask<Object, Integer, JSONObject> 
                     ""+(currentLocation.getLongitude()) + "&hit_per_page="+NUM_OF_PLACES);
 //           TEST  url = new URL("http://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid="+
 //             API_KEY+"&format=json"+ "&hit_per_page="+NUM_OF_PLACES);
-            Log.e("URL ",(API_URL + "keyid=" + API_KEY + "&format=" + RESPONSE_FORMAT +  "&range=" +
-                    apiRange + "&latitude=" + ""+(currentLocation.getLatitude())+ "&longitude=" +
-                    ""+(currentLocation.getLongitude()) + "&hit_per_page="+NUM_OF_PLACES));
+//            Log.e("URL ",(API_URL + "keyid=" + API_KEY + "&format=" + RESPONSE_FORMAT +  "&range=" +
+//                    apiRange + "&latitude=" + ""+(currentLocation.getLatitude())+ "&longitude=" +
+//                    ""+(currentLocation.getLongitude()) + "&hit_per_page="+NUM_OF_PLACES));
             // apiRange+ "&latitude=" + ""+(currentLocation.getLatitude())+ "&longitude=" + "" +
             // (currentLocation.getLongitude()));
 
