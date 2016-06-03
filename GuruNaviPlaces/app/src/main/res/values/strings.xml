@@ -17,7 +17,7 @@
         GuruPlaceInformationScrollingActivity
     </string>
     <string name="error_occurred">
-        "An error has occurred, Are you connected to the network?"</string>>
+        An error has occurred, Are you connected to the network?</string>>
 
     //Google API strings
     <string name="network_error">Connection error: Verify network access and try again</string>

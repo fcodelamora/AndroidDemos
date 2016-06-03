@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">グルナビ Places</string>
+
+    <string name="navigation_drawer_open">ナビゲーションドロワーを開く</string>
+    <string name="navigation_drawer_close">ナビゲーションドロワーを閉める</string>
+    <string name="action_settings">設定</string>
+    <string name="no_information"> - </string>
+    <string name="no_available_information">未登録</string>
+    <string name="check_gps_dialog_title">
+        FINE_LOCATIONのパーミッションが必要です、設定でONにしてください</string>
+    <string name="failed_to_acquire_location">
+        ロケーションを見つけませんデした、モックロケーション使います</string>
+    <string name="zero_results">検索の結果は０です、もっと広い半径試してみませんか？</string>
+    <string name="title_activity_guru_place_information">場所</string>
+    <string name="range">検索半径:</string>
+    <string name="title_activity_guru_place_information_scrolling">
+        GuruPlaceInformationScrollingActivity
+    </string>
+    <string name="error_occurred">
+            エラー行いました，ネットワークに繋がっていますか?</string>>
+    //Google API strings
+    <string name="network_error">接続エラー：ネットに繋がっていますか？</string>
+
+
+
+
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+
+    </string>
+    <string name="visit_website">ウエブサイトへ</string>
+    <string name="null_map_fragment">エラー：マップのインスタンス化を見つかれませんでした</string>
+    <string name="searching">検索中…</string>
+    <string name="loading">ロード中…</string>
+
+
+</resources>
