@@ -32,7 +32,7 @@ public class TaskGetNearbyPlaces extends AsyncTask<Object, Integer, JSONObject> 
     private String API_URL          = "http://api.gnavi.co.jp/RestSearchAPI/20150630/?";
     private String API_KEY          = "37ea75c0a8541c51bb542457c545f694";
     private String RESPONSE_FORMAT  = "json";
-    private String NUM_OF_PLACES    = "200"; //Default is 10, trying 50
+    private String NUM_OF_PLACES    = "50"; //Default is 10, trying 50
 
     //User selected params
     private int apiRange = 2; // 1:300m、2:500m、3:1000m、4:2000m、5:3000m (Values from GURUNAVI API)
